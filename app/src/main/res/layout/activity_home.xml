@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F030F"
+    android:paddingTop="30px">
+
+    <EditText
+        android:id="@+id/inNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="20sp"
+        android:textSize="40sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:id="@+id/resultAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:padding="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:background="#BC0C04"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"/>
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4251507603714430/9761149507"/>
+</RelativeLayout>
